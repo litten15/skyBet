@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+    <div class="xSell"></div>
+    <div class="topNav">
+        <div class="topNavCon"><img src="images/menu.png" id="burger" onclick="openNav()"></div><div class="topNavCon"><img src="images/logo.png" id="logo"></div><div class="topNavCon"></div>
+    </div>
+
+    
+    
+    <div class="navBox" align="center">
+        
+    <img src="images/footballIcon.png" class="navIcon">
+    <p>Football</p>
+    
+    </div><div class="navBox" align="center">
+    
+   
+    
+    <img src="images/racingIcon.png" class="navIcon">
+    <p>Racing</p>
+    
+    </div><div class="navBox" align="center">
+    
+    
+    
+    <img src="images/inPLayIcon.png" class="navIcon">
+    <p>In-Play</p>
+        
+    </div><div class="navBox" align="center">
+    
+   
+    
+    <img src="images/virtualIcon.png" class="navIcon">
+    <p>Virtuals</p>
+    
+    </div><div class="navBox" align="center">
+    
+    
+    
+    <img src="images/crossSellIcon.png" class="navIcon">
+    <p>Roulette</p>
+        
+    </div>
+    
+    <div class="cip"></div>
+    <div class="tabNav"><p class="tabTextBold">Featured</p><p class="tabText">In-Play</p><p class="tabText">Next Races</p><p class="tabText">Accumulators</p></div>
+    
+    <div class="content">
+        
+        
+        <button class="accordion"><p class="accordianText">Football</p></button>
+        <div class="panel">
+        <p>Manchester United v Chelsea</p>
+            <div class="table"> </div>
+        </div>
+        
+        <div class="panel">
+        <p>Bristol v Cardiff</p>
+        </div>
+        
+        <div class="panel">
+        <p>Blackburn v bury</p>
+        </div>
+        
+        <div class="panel">
+        <p>Wigan v Manchester City</p>
+        </div>
+
+        <button class="accordion"><p class="accordianText">Horse Racing</p></button>
+        <div class="panel">
+        <p>Lorem ipsum...</p>
+        </div>
+
+        <button class="accordion"><p class="accordianText">Tennis</p></button>
+        <div class="panel">
+        <p>Lorem ipsum...</p>
+        </div>
+        
+
+        
+    </div>
+
+    
+    <div class="sideNav" id="mySidenav">
+    
+    
+    </div>
+    </div>
+    </body>
+   
+    
+</html>
+
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+//     document.body.style.backgroundColor = "white";
+}
+
+    
+    
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+    
+    
+
+</script>
