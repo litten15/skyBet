@@ -379,3 +379,12 @@ p {
     display: inline-block;
     padding-left: 6px;
 }
+
+.arrow {
+   float: right;
+    width: 15px;
+    height: 21px;
+    padding-right: 9px;
+    padding-top: 12px;
+}
+}
