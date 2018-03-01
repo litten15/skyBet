@@ -28,7 +28,7 @@
         <div class="bfButton">Course Winner</div> 
         <div class="bfButton">Distance Winner</div> 
         <div class="bfButton">Course and Distance Winner</div> 
-        
+      
      
        
     </div>
@@ -37,7 +37,7 @@
     
         <div class="footNav">
                 
-               <div class="footNext" id="footNext" style="visibility: hidden;"></div><div class="footLink"><img src="images/homeIcon.png" class="footerIcon"><p class="footerText">Home</p></div><div class="footLink"><img src="images/promosIcon.png" class="footerIcon"><p class="footerText">Promos</p></div><div class="footLink"><img src="images/betSlipIcon.png" class="footerIcon"><p class="footerText">Bet Slip</p></div><div class="footLink"><img src="images/myBetsIcon.png" class="footerIcon"><p class="footerText">My Bets</p></div><div class="footLink"><img src="images/gameIcon.png" class="footerIcon"><p class="footerText">Games</p></div>
+               <div class="footNext" id="footNext" style="visibility: hidden;"><p class="numberLink" id="numberLink">14</p>  <p class="rfLink" id="rfLink">Results Found</p></div><div class="footLink"><img src="images/homeIcon.png" class="footerIcon"><p class="footerText">Home</p></div><div class="footLink"><img src="images/promosIcon.png" class="footerIcon"><p class="footerText">Promos</p></div><div class="footLink"><img src="images/betSlipIcon.png" class="footerIcon"><p class="footerText">Bet Slip</p></div><div class="footLink"><img src="images/myBetsIcon.png" class="footerIcon"><p class="footerText">My Bets</p></div><div class="footLink"><img src="images/gameIcon.png" class="footerIcon"><p class="footerText">Games</p></div>
             
             
         </div>
@@ -370,8 +370,32 @@ function link(v) {
     if(v == 1){
 //        $("footNext").css("visibility", "visible");
         document.getElementById("footNext").style.visibility = "visible";
+        document.getElementById("numberLink").innerHTML = "14";
     console.log(v);
     }
+    
+    if(v == 2){
+//        $("footNext").css("visibility", "visible");
+        document.getElementById("footNext").style.visibility = "visible";
+        document.getElementById("numberLink").innerHTML = "6";
+    console.log(v);
+    }
+    
+    if(v == 3){
+//        $("footNext").css("visibility", "visible");
+        document.getElementById("footNext").style.visibility = "visible";
+        document.getElementById("numberLink").innerHTML = "1";
+    console.log(v);
+    }
+    
+    if(v > 3){
+//        $("footNext").css("visibility", "visible");
+        document.getElementById("footNext").style.visibility = "visible";
+        document.getElementById("numberLink").innerHTML = "0";
+    console.log(v);
+    }
+    
+    
     
     if(v == 0) {
         document.getElementById("footNext").style.visibility = "hidden";

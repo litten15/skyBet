@@ -362,3 +362,20 @@ p {
     background-color: #132C6C;
     bottom: 0;
 }
+
+.numberLink  {
+    font-size: 21px;
+    color: white;
+    font-family: 'skyMed', Arial,sans-serif;
+    padding-top: 16px;
+    padding-left: 12px;
+    display: inline-block;
+}
+
+.rfLink  {
+    font-size: 21px;
+    color: white;
+    font-family: 'skyReg', Arial,sans-serif;
+    display: inline-block;
+    padding-left: 6px;
+}
