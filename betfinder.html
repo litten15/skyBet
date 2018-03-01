@@ -4,117 +4,40 @@
 
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script src="scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="main">
+    <div id="main" onLoad="button()">
     <div class="xSell"></div>
     <div class="topNav">
         <div class="topNavCon"><img src="images/menu.png" id="burger" onclick="openNav()"></div><div class="topNavCon"><img src="images/logo.png" id="logo"></div><div class="topNavCon"></div>
     </div>
 
-    
-    
-    <div class="navBox" align="center">
-        
-    <img src="images/footballIcon.png" class="navIcon">
-    <p>Football</p>
-    
-    </div><div class="navBox" align="center">
-    
+    <p class="skyReg" id="bfTitle">Horse Racing</p>
+     <div class="bftabNav"><p class="tabTextBold">Bet Finder</p><p class="tabText">Today's Picks</p><p class="tabText">Meetings</p><p class="tabText">Future Races</p></div>
    
-    
-    <img src="images/racingIcon.png" class="navIcon">
-    <p>Racing</p>
-    
-    </div><div class="navBox" align="center">
-    
-    
-    
-    <img src="images/inPlayIcon.png" class="navIcon">
-    <p>In-Play</p>
         
-    </div><div class="navBox" align="center">
-    
-   
-    
-    <img src="images/virtualIcon.png" class="navIcon">
-    <p>Virtuals</p>
-    
-    </div><div class="navBox" align="center">
-    
-    
-    
-    <img src="images/crossSellIcon.png" class="navIcon">
-    <p>Roulette</p>
+    <p class="skyreg" id="bfSubtitle">Bet Finder</p>    
+        <p class="skyreg" id="bfSubtitleTwo">Select <strong>one or more </strong>options</p>
+        <div class="bfButton"  id="topButton">Horse in Form</div>
+        <div class="bfButton">Jockey in Form</div> 
+        <div class="bfButton">Trainer in Form</div> 
+        <div class="bfButton">Winner Last Time Out</div> 
+        <div class="bfButton">Placed Last Time Out</div> 
+        <div class="bfButton">Course Winner</div> 
+        <div class="bfButton">Distance Winner</div> 
+        <div class="bfButton">Course and Distance Winner</div> 
         
-    </div>
-    
-    <div class="cip"></div>
-    <div class="tabNav"><p class="tabTextBold">Featured</p><p class="tabText">In-Play</p><p class="tabText">Next Races</p><p class="tabText">Accumulators</p></div>
-    
-    <div class="content">
-        
-        
-        <button class="accordion"><p class="accordianText">Football</p></button>
-        <div class="panel">
-        <p>Manchester United v Chelsea</p>
-            <div class="table"> </div>
-        </div>
-        
-        <div class="panel">
-        <p>Bristol v Cardiff</p>
-        </div>
-        
-        <div class="panel">
-        <p>Blackburn v bury</p>
-        </div>
-        
-        <div class="panel">
-        <p>Wigan v Manchester City</p>
-        </div>
-
-        <button class="accordion"><p class="accordianText">Horse Racing</p></button>
-        <div class="panel">
-        <p>Lorem ipsum...</p>
-        </div>
-
-        <button class="accordion"><p class="accordianText">Tennis</p></button>
-        <div class="panel">
-        <p>Lorem ipsum...</p>
-        </div>
-        
-
+     
+       
     </div>
         
-        <div class="footer">
-            <div class="advert">
-                
-                <div class="blueBar">
-                
-                </div>
-                
-                <div class="picture">
-                
-                </div>
-                
-            </div>
-        
-            <div class="footerContent">
-            
-            </div>
-            
-            <div class="gamStop">
-            
-            </div>
-        
-        
-        
-        </div>
-        
+ 
+    
         <div class="footNav">
-            <div class="footLink"><img src="images/homeIcon.png" class="footerIcon"><p class="footerText">Home</p></div><div class="footLink"><img src="images/promosIcon.png" class="footerIcon"><p class="footerText">Promos</p></div><div class="footLink"><img src="images/betSlipIcon.png" class="footerIcon"><p class="footerText">Bet Slip</p></div><div class="footLink"><img src="images/myBetsIcon.png" class="footerIcon"><p class="footerText">My Bets</p></div><div class="footLink"><img src="images/gameIcon.png" class="footerIcon"><p class="footerText">Games</p></div>
-            
-            
+                
+               <div class="footNext" id="footNext" style="visibility: hidden;"></div><div class="footLink"><img src="images/homeIcon.png" class="footerIcon"><p class="footerText">Home</p></div><div class="footLink"><img src="images/promosIcon.png" class="footerIcon"><p class="footerText">Promos</p></div><div class="footLink"><img src="images/betSlipIcon.png" class="footerIcon"><p class="footerText">Bet Slip</p></div><div class="footLink"><img src="images/myBetsIcon.png" class="footerIcon"><p class="footerText">My Bets</p></div><div class="footLink"><img src="images/gameIcon.png" class="footerIcon"><p class="footerText">Games</p></div>
             
             
         </div>
@@ -428,42 +351,33 @@
 </html>
 
 <script>
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("main-nav").style.width = "250px";
-    document.getElementById("main-nav").style.display = "block";
-    document.getElementById("main").style.marginLeft = "250px";
-//    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+ 
+v = 0;
+    
+$('.bfButton').click(function(){
+    if($(this).hasClass('active')){
+        $(this).removeClass('active')
+        v = v - 1;
+        link(v);
+    } else {
+        $(this).addClass('active')
+        v = v + 1;
+        link(v);
+    }
+});
+    
+function link(v) {
+    if(v == 1){
+//        $("footNext").css("visibility", "visible");
+        document.getElementById("footNext").style.visibility = "visible";
+    console.log(v);
+    }
+    
+    if(v == 0) {
+        document.getElementById("footNext").style.visibility = "hidden";
+        console.log(v);
+    }
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("main-nav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-//     document.body.style.backgroundColor = "white";
-}
-
-    
-    
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
-
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
-    
-    
 
 </script>

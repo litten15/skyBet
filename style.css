@@ -8,8 +8,17 @@
     src: url(skyReg.ttf);
 }
 
-
-
+@font-face{
+	font-family:Skycons;
+	src:url(https://st1.skybet.com/static/assets/mbet/3994f5f916639aca1dead62e7cc557d0.eot);
+	src:url(https://st1.skybet.com/static/assets/mbet/3994f5f916639aca1dead62e7cc557d0.eot?#iefix) 
+		format("embedded-opentype"),url(https://st1.skybet.com/static/assets/mbet/193fc93a4a5a520b3f559300e16a00c7.woff) 
+		format("woff"),url(https://st1.skybet.com/static/assets/mbet/c67a5aa864eb511a8cce5589e1740cd2.ttf) 
+		format("truetype"),url(https://st1.skybet.com/static/assets/mbet/2fbc74b9babe2a361a30831d2b6013f4.svg#skycons_globalregular) 
+		format("svg");
+	font-weight:400;
+	font-style:normal
+}
 
 p {
     margin: 0;
@@ -79,16 +88,16 @@ p {
     color: #4A4A4A;
 }
 
-.sideNav {
+.main-nav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 1; 
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #020231;
 /*    overflow-x: hidden;  Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+	background: #020231;	
 
 }
 
@@ -114,6 +123,7 @@ p {
     padding-left: 12px;
     outline: none;
     border-radius: 4px 4px 0 0;
+    border: 0;
     
    
 }
@@ -122,6 +132,7 @@ p {
     font-family: skyReg;
     color: #fff;
     font-size: 18px;
+    
     
 }
 
@@ -163,4 +174,191 @@ p {
 .content {
     margin-left: 4px;
     margin-right: 4px;
+}
+
+.footer {
+    width:100%;
+    height: 780px;
+}
+
+.blueBar {
+    width: 100%;
+    height: 48px;
+    background-color: #1145B5;
+    
+}
+
+.footNav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    background: white;
+}
+
+.footLink {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    border-top: 1px solid #BDBDBD;
+}
+
+@media only screen and (min-width: 500px) {
+    .footNav {
+        display: none;
+    }
+}
+
+.footerText {
+    color: gray;
+    text-align: center;
+    font-family: skyReg;
+    display: block;
+    font-size: 11px;
+}
+
+.footerIcon {
+    height:19px;
+    width:21px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+.main-nav ul {
+	padding: 0 16px;
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+.main-nav li {
+	font-size: 16px;
+	line-height: 48px;
+	font-family: 'SkyMed', Arial, sans-serif;
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.main-nav .section-header {
+	background: #132c6c;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 14px;
+	font-family: 'SkyMed', Arial, sans-serif;
+	line-height: 32px;
+	border: none;
+	margin: 0px 16px 8px 16px;
+    padding-left: 11px;
+}
+
+.main-nav--link {
+	text-decoration: none;
+	color: #D0D0DB;
+}
+
+.main-nav--link .i {
+	color: #8B8BA0;
+	font-size: 20px;
+	margin-right: 16px;
+}
+
+.main-nav--link:hover {
+	color: #FFF;
+}
+
+.main-nav--link:hover .i {
+	color: #D0D0DB;
+}
+
+.i:before {
+    content: attr(data-char);
+}
+
+.i {
+    font-family: Skycons;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    font-size: 16px;
+    width: 1em;
+    height: 1em;
+    font-weight: 400;
+}
+
+.x-sellTwo {
+    width: 100%;
+    height: 37px;
+    background-color: #333;
+}
+
+.close {
+    font-size: 20px;
+}
+
+
+/*bet finder*/
+
+
+#bfTitle {
+    font-size: 25px;
+    margin: 21px;
+    
+}
+
+#bfSubtitle {
+    font-size: 22px;
+    margin-left: 23px;
+        color: #000000;
+}
+
+#bfSubtitleTwo {
+    font-size: 14px;
+    margin-left: 23px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+        color: #000000;
+}
+
+.bftabNav {
+    height: 56px;
+    border-bottom: 1px solid #b3bfd3;
+    border-top: 1px solid #b3bfd3;
+    margin-bottom: 18px;
+}
+
+.bfButton {
+    width: 90%;
+    height: 29px;
+    border: 1px solid #b3bfd3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: white;
+    color: #4a4a4a;
+    font-family: 'skymed', Arial,sans-serif;
+    font-size: 18px;
+    padding-top:11px;
+}
+
+
+.bfButton.active {
+    background-color: #132C6C;
+    color: white;
+}
+
+
+.buttonText {
+    padding-top: 11px;
+}
+
+
+.footNext {
+    width: 100%;
+    height: 48px;
+    background-color: #132C6C;
+    bottom: 0;
 }
