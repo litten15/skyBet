@@ -396,4 +396,25 @@ p {
 
 #gamStop {
     width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.resultsImage {
+    width: 367px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.editSelections {
+     width: 367px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
 }
