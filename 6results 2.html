@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script src="scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main" onLoad="button()">
+    <div class="xSell"></div>
+    <div class="topNav">
+        <div class="topNavCon"><img src="images/menu.png" id="burger" onclick="openNav()"></div><div class="topNavCon"><img src="images/logo.png" id="logo"></div><div class="topNavCon"></div>
+    </div>
+
+    <p class="skyReg" id="bfTitle">Horse Racing</p>
+     <div class="bftabNav"><p class="tabTextBold">Bet Finder</p><p class="tabText">Today's Picks</p><p class="tabText">Meetings</p></div>
+   
+        
+    <p class="skyreg" id="bfSubtitle">Bet Finder</p> 
+        <img src="images/results/1.png" id="resultsImage">
+        <a href="betfinder.html"><img src="images/results/editSelections.png" id="editSelections"></a>
+      
+     
+       
+    </div>
+        
+ 
+    
+        <div class="footNav">
+                <a href="results.html" id="changeLink">
+               <div class="footNext" id="footNext" style="visibility: hidden;" ><p class="numberLink" id="numberLink">14</p>  <p class="rfLink" id="rfLink">Results Found</p><img src="images/right.png" id="arrow"></div></a><div class="footLink"><img src="images/homeIcon.png" class="footerIcon"><p class="footerText">Home</p></div><div class="footLink"><img src="images/promosIcon.png" class="footerIcon"><p class="footerText">Promos</p></div><div class="footLink"><img src="images/betslipicon.png" class="footerIcon"><p class="footerText">Bet Slip</p></div><div class="footLink"><img src="images/myBetsIcon.png" class="footerIcon"><p class="footerText">My Bets</p></div><div class="footLink"><img src="images/gameIcon.png" class="footerIcon"><p class="footerText">Games</p></div>
+            
+            
+        </div>
+        
+    <div class="gamStop">
+    <img src="images/gamStop.png" id="gamStop">
+    </div>
+    
+    <div class="main-nav" style="display:none;" id="main-nav">
+
+        <span class="i" data-char="&#xF001" class="close"></span> 
+        
+        <div class="x-sellTwo"></div>
+		<ul>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF001"></span> 
+					Home
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF0D2"></span> 
+					Promotions
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF30D"></span> 
+					Group Betting
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF210"></span> 
+					My Bets
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF04A"></span> 
+					Bet &amp; Watch
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF112"></span> 
+					Help
+				</a>
+			</li>
+		</ul>
+
+		<div class="top-sports">
+
+		<div class="section-header">Top Sports</div>
+
+		<ul>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF390"></span>
+					Football
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF302"></span>
+					Horse Racing
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF30B"></span>
+					Virtual Sports
+				</a>
+			</li>
+		</ul>
+
+		</div>
+
+		<div class="section-header">A-Z Sports</div>
+
+		<ul>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF398"></span> 
+					American Football
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF391"></span> 
+					Athletics
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF397"></span> 
+					Aussie Rules
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF385"></span> 
+					Baseball
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF383"></span> 
+					Basketball
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF370"></span> 
+					Beach Volleyball
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF395"></span> 
+					Boxing
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF392"></span> 
+					Cricket
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF0D4"></span> 
+					Current Affairs
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF386"></span> 
+					Cycling
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF387"></span> 
+					Darts
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF0D4"></span> 
+					ESports
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF390"></span> 
+					Football
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF384"></span> 
+					Formula 1
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF38D"></span> 
+					Gaelic Games
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF396"></span> 
+					Golf
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF394"></span> 
+					Greyhound Racing
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF388"></span> 
+					Handball
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF302"></span> 
+					Horse Racing
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF389"></span> 
+					Ice Hockey
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF384"></span> 
+					Motor Sport
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF38C"></span> 
+					Poker
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF371"></span> 
+					Politics
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF399"></span> 
+					Rugby League
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF39A"></span> 
+					Rugby Union
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF39B"></span> 
+					Snooker
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF382"></span> 
+					Speedway
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF38F"></span> 
+					TV and Film Specials
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF393"></span> 
+					Tennis
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF38B"></span> 
+					UFC and MMA
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF30B"></span> 
+					Virtual Football
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF30B"></span> 
+					Virtual Greyhounds
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF30B"></span> 
+					Virtual Horse Racing
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF30B"></span> 
+					Virtual Motor Racing
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF30B"></span> 
+					Virtual Speedway
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF370"></span> 
+					Volleyball
+				</a>
+			</li>
+			<li>
+				<a class="main-nav--link" href="#">
+					<span class="i" data-char="&#xF372"></span> 
+					Winter Sports
+				</a>
+			</li>
+		</ul>
+
+	</div>
+    
+    </div>
+    </body>
+   
+    
+</html>
+
+<script>
+ 
+v = 0;
+    
+$('.bfButton').click(function(){
+    if($(this).hasClass('active')){
+        $(this).removeClass('active')
+        v = v - 1;
+        link(v);
+    } else {
+        $(this).addClass('active')
+        v = v + 1;
+        link(v);
+    }
+});
+    
+function link(v) {
+    if(v == 1){
+//        $("footNext").css("visibility", "visible");
+        document.getElementById("footNext").style.visibility = "visible";
+        document.getElementById("numberLink").innerHTML = "14";
+        document.getElementById("changeLink").href = "14results.html";
+    console.log(v);
+    }
+    
+    if(v == 2){
+//        $("footNext").css("visibility", "visible");
+        document.getElementById("footNext").style.visibility = "visible";
+        document.getElementById("numberLink").innerHTML = "6";
+        document.getElementById("changeLink").href = "6results.html";
+    console.log(v);
+    }
+    
+    if(v == 3){
+//        $("footNext").css("visibility", "visible");
+        document.getElementById("footNext").style.visibility = "visible";
+        document.getElementById("numberLink").innerHTML = "1";
+        document.getElementById("changeLink").href = "1results.html";
+    console.log(v);
+    }
+    
+    if(v > 3){
+//        $("footNext").css("visibility", "visible");
+        document.getElementById("footNext").style.visibility = "visible";
+        document.getElementById("numberLink").innerHTML = "0";
+    console.log(v);
+    }
+    
+    
+    
+    if(v == 0) {
+        document.getElementById("footNext").style.visibility = "hidden";
+        console.log(v);
+    }
+}
+
+
+</script>

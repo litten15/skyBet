@@ -418,3 +418,159 @@ p {
     margin-right: auto;
     padding-top: 20px;
 }
+
+
+/*ACCORDIAN */
+
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #132C6C;
+  line-height: 3;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  font-family: 'skyReg', Arial,sans-serif;
+}
+.blue label {
+  background: #2980b9;
+}
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #0C1F52;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.blue .tab-content {
+  background: #3498db;
+}
+
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 9em;
+}
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+font-family: 'skyReg', Arial,sans-serif;
+}
+input[type=checkbox] + label::after {
+  content: "+";
+}
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
+.statHeading{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding-top: 25px;
+}
+
+.blueBar {
+    width: 25%;
+    height: 24px;
+    border-radius: 4px 0 0 4px;
+    display: inline-block;
+}
+
+.redBar {
+    width: 75%;
+    height: 24px;
+    border-radius: 0 4px 4px 0;
+    display: inline-block;
+    background-color: #D92231;
+}
+
+.barArea{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 100px;
+    margin-top: 9px;
+}
+
+.barTextBlue {
+    color: white;
+    display: inline;
+    font-family: 'skyReg', Arial,sans-serif;
+    position: absolute;
+    padding-top: 5px;
+    margin-left: 8px;
+}
+
+.barTextRed {
+    color: white;
+    display: inline;
+    font-family: 'skyReg', Arial,sans-serif;
+    position: absolute;
+    padding-top: 5px;
+    float: right;
+    margin-left: 63%;
+}
+
+.names {
+    display: inline-block;
+    color: white;
+    font-family: 'skyReg', Arial,sans-serif;
+    margin-left: 8%;
+    margin-top: 5px;
+}
+
+.namesTwo {
+    display: inline-block;
+    color: white;
+    font-family: 'skyReg', Arial,sans-serif;
+    float: right;
+    margin-right: 8%;
+    margin-top: 5px;
+}
+
+.infoText {
+     font-family: 'skyReg', Arial,sans-serif;
+    font-size: 12px;
+    margin-left: 4%;
+        margin-top: 8px;
+    float: left;
+}
+
+.infoTextRed {
+     font-family: 'skyReg', Arial,sans-serif;
+    font-size: 12px;
+    float: right;
+    margin-right: 4%;
+    margin-top: 8px;
+
+}
