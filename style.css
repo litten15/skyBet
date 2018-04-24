@@ -132,6 +132,7 @@ p {
     font-family: skyReg;
     color: #fff;
     font-size: 18px;
+    letter-spacing: 1px;
     
     
 }
@@ -572,5 +573,186 @@ input[type=radio]:checked + label::after {
     float: right;
     margin-right: 4%;
     margin-top: 8px;
+
+}
+
+/*Lotto*/
+
+#lbfTitle {
+    font-size: 25px;
+    margin: 20px 0 0 11px; 
+}
+
+#lSub {
+    font-size: 14px;
+    margin: 11px 0 0 11px; 
+}
+
+.laccordion {
+    background-color: #132C6C;
+    height:48px;
+    width: 100%;
+    text-align: left;
+    padding-left: 12px;
+    outline: none;
+    border-radius: 4px 4px 0 0;
+    border: 0;
+}
+
+.laccordianText {
+    font-family: skyReg;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.linfoText{
+    width: 100%;
+    height: 70px;
+    background-color: #DCE3ED;
+/*
+    border: 1px;
+    border-color: #B3BFD3;
+    border-style: inset;
+*/
+}
+
+.lhelpText {
+    padding: 27px 0 0 12px;
+    font-size: 14px;
+    display: inline-block;
+    font-family: skyMed;
+}
+
+.luckyDip {
+    width: 96px;
+    height: 40px;
+    background-color: #153F8E;
+    border-radius: 4px;
+    float: right;
+    display: inline-block;
+    margin: 13px;
+    
+}
+
+.luckyDipText {
+    font-family: skyReg;
+    color: white;
+    font-size: 16px;
+    padding-top: 13px;
+    padding-left: 14px;
+}
+
+.betSlip {
+    width: 100%;
+    height: 90px;
+}
+
+.addToBetslip {
+    width: 230px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #DCE3ED;
+    float: right;
+    margin-right: 12px;
+    margin-top: 27px;
+}
+
+.addToBetslip.active {
+    width: 230px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #04A04A;
+    float: right;
+    margin-right: 12px;
+    margin-top: 27px;
+}
+
+
+
+
+.addToBetslipText {
+    font-family: skyMed;
+    font-size: 16px;
+    color: #3C3C3C;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.line {
+    height: 1px;
+    width: 93%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #B3BFD3;
+}
+
+.ballsContainer {
+    display: block;
+    width: 19%;
+    float: left;
+}
+
+.balls {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #B3BFD3;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    display: inline-block;
+    color: black;
+    margin-top: 14px;
+    margin-left: 14px;
+}
+
+.balls.active {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #B3BFD3;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: #132C6C;
+
+}
+
+.ballsNumber {
+    font-size: 20px;
+    margin-top: 14px;
+    text-align: center;
+
+}
+
+.ballHelpContainer {
+    display: block;
+    float: left;
+    width: 10%;
+    margin-left: 17px;
+    margin-top: 14px;
+
+}
+
+.ballHelp {
+    display: inline-block;
+}
+
+.select {
+    height: 30px;
+    width: 30px;
+    border: solid 1px #B3BFD3;
+    display: inline-block;
+    border-radius: 30px;
+    float: left;
+}
+
+.ballContent {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+   font-family: skyReg;
+    float: right;
+    float: left;
 
 }
