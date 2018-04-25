@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -557,10 +557,12 @@
 </html>
 
 <script>
-
+    var i = 0;
     $('.balls').click(function(){
+//        if (i < 2) {
     if($(this).hasClass('active')){
         $(this).removeClass('active')
+        i = i - 1;
         if ($('#contentTwo').is(':empty')){
         document.getElementById('contentOne').innerHTML = "";
             
@@ -568,11 +570,13 @@
             $('.addToBetslip').removeClass('active');
             document.getElementById('contentTwo').innerHTML = "";
         }
+//        alert(i);
        
     } else {
         $(this).addClass('active')
+        i = i + 1;
         var value =  $(this).find('.ballsNumber').text();
-        
+//        alert(i);
             if ($('#contentOne').is(':empty')){
             
             document.getElementById('contentOne').innerHTML = value;
@@ -580,9 +584,10 @@
             } else {
                 document.getElementById('contentTwo').innerHTML = value;
                 $('.addToBetslip').addClass('active');
+                
             }
 
-    }});
+        }});
 
     
 

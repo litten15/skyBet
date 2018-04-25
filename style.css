@@ -669,6 +669,10 @@ input[type=radio]:checked + label::after {
 }
 
 
+.addToBetslip.active .addToBetslipText {
+    color: white;
+}
+
 
 
 .addToBetslipText {
@@ -701,7 +705,6 @@ input[type=radio]:checked + label::after {
     width: 48px;
     border-radius: 30px;
     display: inline-block;
-    color: black;
     margin-top: 14px;
     margin-left: 14px;
 }
@@ -716,6 +719,10 @@ input[type=radio]:checked + label::after {
     display: inline-block;
     background-color: #132C6C;
 
+}
+
+.balls.active .ballsNumber {
+    color: white;
 }
 
 .ballsNumber {
